@@ -1,0 +1,572 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+/* Common */
+.clear {
+    clear: both;
+}
+
+.text-center {
+    text-align: center !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;  
+}
+
+.pad-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.mbt-8 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.mbt-16 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+/* Main */
+#header {
+    height: 46px;
+    background-color: #c70101;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    line-height: 46px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 24px;
+}
+
+#nav > li:hover > a {
+    background-color: #ff0000;
+}
+
+#nav .subnav {
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    min-width: 160px;
+    display: none;
+    box-shadow: 0 0 10px rgb(128, 128, 128, 3);
+}
+
+#nav .subnav li {
+    display: block; 
+}
+
+#nav .subnav a {
+    color: #ff0000;
+    text-decoration: none;
+    padding: 0px 16px;
+    line-height: 38px;
+    display: block;
+}
+
+#nav .subnav li:hover a {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+.nav-down-icon {
+    font-size: 16px;
+}
+
+.nav-home-icon {
+    margin-right: 6px;
+}
+
+.nav-mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0 16px;
+    display: none;
+}
+
+.nav-mobile-menu .mobile-menu-icon {
+    color: #fff;
+    line-height: 46px;
+}
+
+.nav-mobile-menu:hover {
+    background-color: #ff0000;
+}
+
+.nav-search-btn {
+    float: right;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.nav-search-btn .search-icon {
+    line-height: 46px;
+    color: #fff;
+}
+
+.nav-search-btn:hover {
+    background-color: #fff;
+}
+
+.nav-search-btn:hover .search-icon {
+    color: #000;
+}
+
+#slider {
+    background: url('../img/slider-ManUTD/cover.jpg') bottom center / cover no-repeat;
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat; */
+    padding-top: 48%;
+    position: relative;
+}
+
+#slider .slider-content {
+    position: absolute;   
+    color: #fff;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider .text-content {
+    text-align: center;
+    font-size: 36px;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#content {
+
+}
+
+#content .text-section {
+    padding: 64px 16px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+#content .about-section {
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+#content .player-name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* font-size: 15px; */
+    font-weight: 500;
+}
+
+#content .player-img {
+    width: 160px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+#content .tour-section {
+    /* background-color: #000; */
+    background: url('../img/slider-ManUTD/otf3.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+#content .tickets-list {
+    margin-top: 50px;
+    list-style-type: none;
+    background-color: #fff;
+}
+
+#content .place-section {
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+
+#content .tickets-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 16px;
+    color: #757575;
+}
+
+#content .tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 4px 8px;
+}
+
+#content .tickets-list .quantity {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -3px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.tour-section .place-img {
+    width: 245.33px;
+    height: 163.55px;
+    display: block;
+}
+
+.tour-section .place-img:hover {
+    opacity: 0.8;
+}
+
+.tour-section .place-content {
+    background-color: #fff;
+    color: #000;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.tour-section .place-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tour-section .place-time {
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.tour-section .place-description {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.tour-section .place-buy-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.tour-section .place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.Otf-section {
+    background: url('../img/slider-ManUTD/otf2.jpg') center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+
+.Otf-container {
+    width: 900px;
+    max-width: 100%;
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 3px;
+}
+
+.Otf-content {
+    color: #fff;
+    text-align: center;    
+}
+
+.Otf-heading {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.Otf-theatre {
+    font-size: 20px;
+    color: #c70101;
+    margin-top: 8px ;
+}
+
+.Otf-description {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.Otf-mobile-description {
+    display: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 36px;
+    text-align: justify;
+    line-height: 1.2;
+} 
+
+/* .contact-section {
+    background: url(/ManUTD/assets/img/player/squad1.jpg) bottom center / cover no-repeat;
+}
+
+.contact-section .text-section {
+    color: #fff;
+} */
+.contact-list {
+    font-size: 18px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 24px;
+}
+
+.contact-list i[class*="fa-"] {
+    line-height: 1.5;
+    width: 28px;
+    font-size: 16px;
+}
+
+.contact-list .input-contact {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 11px 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-list .submit-contact {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 11px 17px;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.contact-list .submit-contact:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#footer {
+    background-color: #c70101;
+    color: #fff;
+}
+
+#footer .footer-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.footer-icon i {
+    margin: 0 2px;
+}
+
+.footer-icon i:hover {
+    opacity: 0.6;
+}
+
+#footer .copy-right {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.copy-right span {
+    color: #8480f8;
+}
+
+
+/* JS-buy-btn */
+.modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 300px;
+    animation: ModalFadeIn ease-in 0.3s;
+
+}
+
+.modal-header {
+    position: relative;
+    background-color: #c70101;
+    padding: 42px 16px;
+    color: #fff;
+}
+
+.modal-heading {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.modal-shop-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.modal-close-icon:hover {
+    background-color: #ff0000;
+}
+
+.modal-body {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.modal-body .tickets {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.modal-body .input {
+    width: 100%;
+    padding: 10px;
+}
+
+.modal-buy .fas {
+    margin-right: 4px;
+    font-size: 15px;
+}
+
+.modal-body .modal-pay {
+    background-color: #c70101;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    line-height: 46px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-body .modal-pay:hover {
+    background-color: #ff0000;
+}
+
+.modal-pay .fab {
+    margin-left: 2px;
+    font-size: 15px;
+}
+
+.modal-help {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    float: right;
+}
+
+.modal-help a {
+    color: #2196F3;
+}
+
+@keyframes ModalFadeIn {
+    from {
+        transform: translateY(-150px);
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,117 @@
+/* Tablet */ 
+@media (maw-width: 63.9375em) {
+    .nav-mobile-menu {
+        display: none;
+    }
+}
+/* Mobile */
+@media (max-width: 46.25em) {
+    .s-col-full {
+        width: 100%;
+    }
+    .s-full-width {
+        width: 100%;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #nav {
+        display: block;
+        /* background-color: #c70101; */
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav > li:first-child {
+        display: inline-block;
+    }
+    #nav > li > a {
+        padding: 1px 24px;
+    }
+    #nav .subnav {
+        position: inherit;
+    }
+    #nav .subnav a {
+        padding: 4px 32px;
+    }
+    .nav-search-btn {
+        display: none;
+    }
+    .nav-mobile-menu {
+        display: block;
+    }
+    #slider {
+        padding-top: 100%;
+    }
+    #slider .slider-content {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        text-align: center;
+    }
+    #slider .text-content {
+        font-size: 28px;
+    }
+    #slider .text-description {
+        font-size: 15px;
+    }
+    #content .text-section {
+        max-width: 100%;
+    }
+    .Otf-container {
+        max-width: 80%;
+    }
+    .Otf-section {
+        padding-top: 100%;
+    }
+    .Otf-description {
+        display: none;
+    }
+    .Otf-mobile-description {
+        display: block;
+        font-size: 15px;
+    }
+    .Otf-container {
+        /* max-height: 40%; */
+    }
+    .Otf-heading {
+        font-size: 24px;
+    }
+    .Otf-theatre {
+        font-size: 16px;
+    }
+    #content .player-name {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    #content .player-img {
+        width: 60%;
+    }
+    .tour-section .place-img {
+        width: 100%;
+        height: 100%;
+    } 
+    .tour-section .place-buy-btn {
+        padding: 16px 18px;
+    }
+    .contact-list {
+        line-height: 2;
+    }
+    .contact-list .input-contact {
+        padding: 15px 8px;
+    }
+    .contact-list .contact-form {
+        margin-top: 8px;
+    }
+    .contact-list .submit-contact {
+        padding: 16px 17px;
+        width: 100%;
+    }
+    .footer-icon i {
+        margin: 0 4px;
+    }
+    .copy-right span {
+        padding: 8px 0;
+        display: inline-block;
+    }
+}
